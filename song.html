@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Song 🎵</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-4">
+    <!-- Floating Hearts -->
+    <div class="floating-hearts" id="hearts"></div>
+
+    <div class="song-container">
+        <!-- Back to letter page -->
+        <a href="letter.html" class="back-btn">← Back to Letter</a>
+
+
+        <div class="song-card">
+            <!-- Video Section - Properly sized -->
+            <div class="video-section">
+                <video id="loveVideo" controls>
+                    <source src="Assets/InShot_20260213_231208156.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Message and Music Control - Centered -->
+            <div class="song-message">
+                <p class="song-text">A song that reminds me of you</p>
+
+                <button class="song-button" id="playSongButton">
+                    <span class="button-icon">🎵</span>
+                    <span class="button-text">Play</span>
+                    <span class="button-icon">🎵</span>
+                </button>
+
+                <!-- Hidden audio element -->
+                <audio id="song" src="Assets/Nyasha David - Moyo Muti (Official Music Video) [r5rmt4BfGsQ].mp3"></audio>
+
+                <p class="video-note">Watch and listen, my love ❤️</p>
+            </div>
+
+            <!-- Final Message - Now in white and centered -->
+            <div class="final-message">
+                <p class="final-line">Our relationship is the greatest gift that I will ever get in this lifetime.</p>
+                <p class="final-line">I appreciate you ❤️</p>
+                <p class="final-signature">Your Vivian ❤️</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

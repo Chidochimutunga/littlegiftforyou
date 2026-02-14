@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>10 Reasons I Love You 💋</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-2">
+	<!-- Floating Hearts Continue -->
+	<div class="floating-hearts" id="hearts"></div>
+
+	<div class="reasons-container">
+		<!-- Back button to homepage -->
+		<a href="index.html" class="back-btn">← Back</a>
+
+		<h1 class="reasons-main-title">10 Reasons Why I Love You</h1>
+
+		<!-- Circle of Kisses -->
+		<div class="kisses-circle" id="kissesCircle">
+			<!-- The center text (reasons appear here) -->
+			<div class="circle-center">
+				<span class="center-text" id="centerReason">Click<br>a Kiss</span>
+			</div>
+
+			<!-- 10 kiss emojis placed in a circle -->
+			<div class="kiss-wrapper" style="--i:0"><span class="kiss" onclick="showReason(0)">💋</span></div>
+			<div class="kiss-wrapper" style="--i:1"><span class="kiss" onclick="showReason(1)">💋</span></div>
+			<div class="kiss-wrapper" style="--i:2"><span class="kiss" onclick="showReason(2)">💋</span></div>
+			<div class="kiss-wrapper" style="--i:3"><span class="kiss" onclick="showReason(3)">💋</span></div>
+			<div class="kiss-wrapper" style="--i:4"><span class="kiss" onclick="showReason(4)">💋</span></div>
+			<div class="kiss-wrapper" style="--i:5"><span class="kiss" onclick="showReason(5)">💋</span></div>
+			<div class="kiss-wrapper" style="--i:6"><span class="kiss" onclick="showReason(6)">💋</span></div>
+			<div class="kiss-wrapper" style="--i:7"><span class="kiss" onclick="showReason(7)">💋</span></div>
+			<div class="kiss-wrapper" style="--i:8"><span class="kiss" onclick="showReason(8)">💋</span></div>
+			<div class="kiss-wrapper" style="--i:9"><span class="kiss" onclick="showReason(9)">💋</span></div>
+		</div>
+
+		<!-- Next button (appears after all kisses are clicked) -->
+		<div class="next-button-container" id="nextButtonContainer" style="display: none;">
+			<button class="next-btn" onclick="location.href='letter.html'">
+				<span>Continue to My Letter 💌</span>
+			</button>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Letter to You 💌</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="page-3">
+	<!-- Floating Hearts -->
+	<div class="floating-hearts" id="hearts"></div>
+
+	<div class="letter-container">
+		<!-- Back to reasons page -->
+		<a href="reasons.html" class="back-btn">← Back</a>
+
+		<h1 class="letter-page-title">My Love Letter to You</h1>
+
+		<!-- THE REALISTIC ENVELOPE -->
+		<div class="envelope-wrapper">
+			<div class="envelope" id="envelope">
+				<!-- Envelope Back -->
+				<div class="envelope-back"></div>
+
+				<!-- Envelope Front -->
+				<div class="envelope-front">
+					<div class="envelope-content">
+						<div class="envelope-address">
+							<span>To: My Love</span>
+							<span>From: Your Vivian</span>
+						</div>
+						<div class="envelope-instruction">(click the 💌 to open)</div>
+					</div>
+				</div>
+
+				<!-- Envelope Flap -->
+				<div class="envelope-flap" id="envelopeFlap">
+					<div class="flap-content"></div>
+				</div>
+
+				<!-- CLICKABLE SEAL EMOJI -->
+				<div class="seal" id="sealEmoji" onclick="openEnvelope()">
+					💌
+				</div>
+
+				<!-- THE LETTER THAT PULLS OUT -->
+				<div class="letter-card" id="letterCard">
+					<div class="letter-paper">
+						<div class="letter-inner">
+							<h3 class="letter-salutation">My Dearest Olivet,</h3>
+							<div class="letter-body" id="letterMessage"></div>
+							<div class="letter-closing">
+								Forever yours,<br>
+								<span class="signature">Vivian</span>
+								<span class="heart-signature">❤️</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Put on Your Headphones Button (hidden initially) -->
+		<div class="headphones-section" id="headphonesSection" style="display: none;">
+			<button class="headphones-button" id="headphonesButton" onclick="location.href='song.html'">
+				<span class="headphones-icon">🎧</span>
+				<span class="headphones-text">Put on your headphones</span>
+				<span class="headphones-icon">🎧</span>
+			</button>
+			<p class="headphones-note">Then click to hear our song and see your video ❤️</p>
+		</div>
+
+		<!-- Small instruction -->
+		<p class="envelope-hint" id="envelopeHint">Click the 💌 emoji to open your letter</p>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
